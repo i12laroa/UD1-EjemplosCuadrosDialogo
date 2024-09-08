@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UD1-EjemplosColorDialog", "UD1-EjemplosColorDialog\UD1-EjemplosColorDialog.csproj", "{3166FB6D-0A50-4F27-B4D4-065E0F33AABC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UD1-EjemploOpenFileDialog", "UD1-EjemploOpenFileDialog\UD1-EjemploOpenFileDialog.csproj", "{1D701867-38E7-4485-B601-85021785CB08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3166FB6D-0A50-4F27-B4D4-065E0F33AABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3166FB6D-0A50-4F27-B4D4-065E0F33AABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3166FB6D-0A50-4F27-B4D4-065E0F33AABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D701867-38E7-4485-B601-85021785CB08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D701867-38E7-4485-B601-85021785CB08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D701867-38E7-4485-B601-85021785CB08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D701867-38E7-4485-B601-85021785CB08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
