@@ -20,7 +20,7 @@ namespace UD1_EjemploOpenFileDialog
 
         private void btnAbrir_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFileDialog1.Filter = "Text files (*.txt)|*.txt";
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {

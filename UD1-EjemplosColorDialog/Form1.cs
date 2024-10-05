@@ -20,10 +20,26 @@ namespace UD1_EjemplosColorDialog
 
         private void btnColor_Click(object sender, EventArgs e)
         {
-            //  colorDialog1.ShowDialog();
+             colorDialog1.ShowDialog();
 
             if (colorDialog1.ShowDialog() == DialogResult.OK)
                 panel1.BackColor = colorDialog1.Color;
+        }
+
+        private void btnPanel_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                panel1.BackColor = colorDialog1.Color;
+            }
+        }
+
+        private void btnFondo_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this.BackColor = colorDialog1.Color;
+            }
         }
     }
 }
