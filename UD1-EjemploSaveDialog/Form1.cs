@@ -39,5 +39,13 @@ namespace UD1_EjemploSaveDialog
                 MessageBox.Show("Error de escritura en el fichero :" + ex.Message);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           if (fontDialog1.ShowDialog() == DialogResult.OK )
+            {
+                txtUsuario.Font = fontDialog1.Font;
+            }
+        }
     }
 }
