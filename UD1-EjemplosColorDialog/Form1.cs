@@ -18,13 +18,6 @@ namespace UD1_EjemplosColorDialog
             InitializeComponent();
         }
 
-        private void btnColor_Click(object sender, EventArgs e)
-        {
-             colorDialog1.ShowDialog();
-
-            if (colorDialog1.ShowDialog() == DialogResult.OK)
-                panel1.BackColor = colorDialog1.Color;
-        }
 
         private void btnPanel_Click(object sender, EventArgs e)
         {
