@@ -94,11 +94,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(268, 184);
+            this.button1.Location = new System.Drawing.Point(261, 178);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 23);
+            this.button1.Size = new System.Drawing.Size(156, 29);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Fuente Fichero";
+            this.button1.Text = "Fuente Usuario";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

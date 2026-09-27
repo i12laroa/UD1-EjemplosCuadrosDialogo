@@ -20,16 +20,18 @@ namespace UD1_EjemploOpenFileDialog
 
         private void btnAbrir_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Text files (*.txt)|*.txt";
 
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            try
             {
+                openFileDialog1.Filter = "Text files (*.txt)|*.txt";
 
-                // Obtener el nombre del archivo seleccionado
-                string filePath = openFileDialog1.FileName;
-             
-                try
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
+
+                    // Obtener el nombre del archivo seleccionado
+                    string filePath = openFileDialog1.FileName;
+
+
                     // Leer todas las líneas del archivo
                     string[] lines = File.ReadAllLines(filePath);
 
@@ -45,12 +47,13 @@ namespace UD1_EjemploOpenFileDialog
 
                     MessageBox.Show("Archivo cargado correctamente.");
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al leer el archivo: " + ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer el archivo: " + ex.Message);
+            }
 
             }
         }
     }
-}
+
