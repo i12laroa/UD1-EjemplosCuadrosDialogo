@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnColor = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.panel1 = new System.Windows.Forms.GroupBox();
+            this.btnPanel = new System.Windows.Forms.Button();
+            this.btnFondo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,37 +48,34 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.btnColor);
-            this.panel1.Location = new System.Drawing.Point(71, 96);
+            this.panel1.Controls.Add(this.btnFondo);
+            this.panel1.Controls.Add(this.btnPanel);
+            this.panel1.Location = new System.Drawing.Point(71, 125);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(445, 137);
+            this.panel1.Size = new System.Drawing.Size(463, 145);
             this.panel1.TabIndex = 1;
+            this.panel1.TabStop = false;
+            this.panel1.Text = "Panel de Color";
             // 
-            // btnColor
+            // btnPanel
             // 
-            this.btnColor.Location = new System.Drawing.Point(228, 31);
-            this.btnColor.Name = "btnColor";
-            this.btnColor.Size = new System.Drawing.Size(78, 29);
-            this.btnColor.TabIndex = 0;
-            this.btnColor.Text = "Color";
-            this.btnColor.UseVisualStyleBackColor = true;
-            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
+            this.btnPanel.Location = new System.Drawing.Point(27, 48);
+            this.btnPanel.Name = "btnPanel";
+            this.btnPanel.Size = new System.Drawing.Size(166, 48);
+            this.btnPanel.TabIndex = 0;
+            this.btnPanel.Text = "Color Panel";
+            this.btnPanel.UseVisualStyleBackColor = true;
+            this.btnPanel.Click += new System.EventHandler(this.btnPanel_Click);
             // 
-            // textBox1
+            // btnFondo
             // 
-            this.textBox1.Location = new System.Drawing.Point(30, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 22);
-            this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(30, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(174, 22);
-            this.textBox2.TabIndex = 2;
+            this.btnFondo.Location = new System.Drawing.Point(234, 48);
+            this.btnFondo.Name = "btnFondo";
+            this.btnFondo.Size = new System.Drawing.Size(172, 48);
+            this.btnFondo.TabIndex = 1;
+            this.btnFondo.Text = "Color Ventana";
+            this.btnFondo.UseVisualStyleBackColor = true;
+            this.btnFondo.Click += new System.EventHandler(this.btnFondo_Click);
             // 
             // Form1
             // 
@@ -91,7 +87,6 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,11 +95,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnColor;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.GroupBox panel1;
+        private System.Windows.Forms.Button btnFondo;
+        private System.Windows.Forms.Button btnPanel;
     }
 }
 
